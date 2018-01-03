@@ -1,0 +1,387 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>2018版玄修模拟器</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css" media="all" />
+    <!--[if IE 6]><script>try{document.execCommand("BackgroundImageCache", false, true);}catch(e){}</script><![endif]-->
+    <script charset="gb2312" src="js/jquery(mixNIE).last.js"></script>
+    <script type="text/javascript" src="js/Simulator_data.js"></script>
+    <script type="text/javascript" src="js/Simulator.js"></script>
+    <script type="text/javascript">
+        function changeStyle(schoolName) {
+            //Simulator.resetBaseData(Simulator.mainGroupID,Simulator.subGroupID);
+            schoolID = Simulator.schollIDWithE(schoolName);
+            Simulator.initSkill(schoolID, Simulator.mainGroupID, Simulator.subGroupID);
+            window.location = '#' + schoolID;
+        }
+
+        $(function () {
+            var param = window.location.hash.substr(1);
+            var schoolID = 1;
+            var regx = /^\d{1,10}$/;
+            if (regx.test(param))
+                schoolID = param;
+            //alert(window.location.hash.substr(1));
+            Simulator.init(schoolID, 1, 2);
+        })
+    </script>
+</head>
+
+<body id="simulator">
+    <h1 class="hide">2016幽篁版玄修模拟器-天下3官方论坛出品</h1>
+    <div id="wrap">
+        <div id="wrap-bg1">
+            <div id="wrap-bg2">
+                <div id="wrap-bg3">
+                    <div id="main">
+                        <div id="header">
+                            <div class="maintx">
+                                <a href="http://tx3.netease.com" target="_blank" title="2016新版玄修模拟器-天下3官方论坛出品"></a>
+                            </div>
+                            <div class="mainNav">
+                                <a href="javascript:changeStyle('hh');" id="mainNav-2">荒火</a>
+                                <a href="javascript:changeStyle('tj');" id="mainNav-5">天机</a>
+                                <a href="javascript:changeStyle('ly');" id="mainNav-3">翎羽</a>
+                                <a href="javascript:changeStyle('wl');" id="mainNav-6">魍魉</a>
+                                <a href="javascript:changeStyle('tx');" id="mainNav-4">太虚</a>
+                                <a href="javascript:changeStyle('yl');" id="mainNav-8">云麓</a>
+                                <a href="javascript:changeStyle('bx');" id="mainNav-1">冰心</a>
+                                <a href="javascript:changeStyle('yj');" id="mainNav-7">奕剑</a>
+                                <a href="javascript:changeStyle('gm');" id="mainNav-9">鬼墨</a>
+                                <a href="javascript:changeStyle('lw');" id="mainNav-10">龙巫</a>
+                                <a href="javascript:changeStyle('yh');" id="mainNav-11">幽篁</a>
+                            </div>
+                        </div>
+                        <div id="center">
+                            <div class="setting">
+                                <!--<span class="set-point">用掉点数：<strong id="pointUsedByGroup1">0</strong>/<strong id="pointUsedByGroup2">0</strong></span>-->
+                                <span class="set-point" style="width:130px; margin-left:0px;">已用点：左
+                                    <strong id="pointUsedByGroup1">0</strong>&nbsp;右
+                                    <strong id="pointUsedByGroup2">0</strong>
+                                </span>
+                                <span class="set-pointRemain">可分配点数：
+                                    <strong id="oRemainPoint">-</strong>
+                                </span>
+                                <label class="set-level">
+                                    <span>等级:</span>
+                                    <input type="text" value="0" id="iLevel" />
+                                </label>
+                                <a href="javascript:;" class="btn btnConmit" id="btnCommit">确定</a>
+                                <a href="javascript:;" class="btn btnReset" id="btnReset">加点重置</a>
+                            </div>
+                            <div class="mainSubControl" id="mainSubControl-1">
+                                <span class="maskButton"></span>
+                            </div>
+                            <div class="mainSubControl" id="mainSubControl-2">
+                                <span class="maskButton"></span>
+                            </div>
+                            <div class="skillList" id="skillList-1">
+                                <div class="skillItem skill_11">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_12">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_13">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_14">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_21">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_22">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_23">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_24">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_31">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_32">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_33">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_34">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_41">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_42">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_43">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_44">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_51">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_52">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_53">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_54">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_61">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_62">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_63">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_64">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_71">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_72">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_73">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_74">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_75">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                            </div>
+                            <div class="skillList" id="skillList-2">
+                                <div class="skillItem skill_11">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_12">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_13">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_14">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_21">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_22">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_23">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_24">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_31">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_32">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_33">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_34">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_41">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_42">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_43">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_44">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_51">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_52">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_53">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_54">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_61">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_62">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_63">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_64">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_71">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_72">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_73">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_74">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                                <div class="skillItem skill_75">
+                                    <span class="icon"></span>
+                                    <a href="javascript:;" class="hover"></a>
+                                    <span class="point">0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="alterTips">
+                        </div>
+                    </div>
+                    <!--[if!IE]>main<![endif]-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="skillTips"></div>
+    <div id="botCode"></div>
+</body>
+
+</html>
