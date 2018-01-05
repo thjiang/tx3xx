@@ -2237,38 +2237,38 @@ var Simulator_data = {
     "103201,1": {
         "pos_x": 1,
         "test_flag": 0,
-        "icon_no": "10350",
+        "icon_no": "10354",
         "school": 3,
         "pos_y": 1,
         "group": 2,
         "pre_point_requir": 0,
         "pre_main_point_requir": 15,
-        "tname": "风声鹤唳",
-        "tips": "每40秒获得一次持续20秒的风声鹤唳状态，该状态下只能受到最大生命值40%的伤害，其他伤害将被全部抵消，当有超过生命值1%的伤害被抵消时，解除此状态。"
+        "tname": "草蛇灰线",
+        "tips": "技能状态命中力提升自身等级数值的1倍，你释放的陷阱对目标产生影响时，忽略对方7%的法术防御。"
     },
     "103201,2": {
         "pos_x": 1,
         "test_flag": 0,
-        "icon_no": "10350",
+        "icon_no": "10354",
         "school": 3,
         "pos_y": 1,
         "group": 2,
         "pre_point_requir": 0,
         "pre_main_point_requir": 15,
-        "tname": "风声鹤唳",
-        "tips": "每30秒获得一次持续20秒的风声鹤唳状态，该状态下只能受到最大生命值33%的伤害，其他伤害将被全部抵消，当有超过生命值1%的伤害被抵消时，解除此状态。"
+        "tname": "草蛇灰线",
+        "tips": "技能状态命中力提升自身等级数值的1.6倍，你释放的陷阱对目标产生影响时，忽略对方14%的法术防御。"
     },
     "103201,3": {
         "pos_x": 1,
         "test_flag": 0,
-        "icon_no": "10350",
+        "icon_no": "10354",
         "school": 3,
         "pos_y": 1,
         "group": 2,
         "pre_point_requir": 0,
         "pre_main_point_requir": 15,
-        "tname": "风声鹤唳",
-        "tips": "每25秒获得一次持续20秒的风声鹤唳状态，该状态下只能受到最大生命值27%的伤害，其他伤害将被全部抵消，当有超过生命值1%的伤害被抵消时，解除此状态。"
+        "tname": "草蛇灰线",
+        "tips": "技能状态命中力提升自身等级数值的2.2倍，你释放的陷阱对目标产生影响时，忽略对方21%的法术防御。"
     },
     "103202,1": {
         "pos_x": 2,
@@ -2357,38 +2357,38 @@ var Simulator_data = {
     "103205,1": {
         "pos_x": 4,
         "test_flag": 0,
-        "icon_no": "10354",
+        "icon_no": "10350",
         "school": 3,
         "pos_y": 2,
         "group": 2,
         "pre_point_requir": 5,
         "pre_main_point_requir": 22,
-        "tname": "草蛇灰线",
-        "tips": "技能状态命中力提升自身等级数值的1倍，你释放的陷阱对目标产生影响时，忽略对方7%的法术防御。"
+        "tname": "风声鹤唳",
+        "tips": "每40秒获得一次持续20秒的风声鹤唳状态，该状态下只能受到最大生命值40%的伤害，其他伤害将被全部抵消，当有超过生命值1%的伤害被抵消时，解除此状态。"
     },
     "103205,2": {
         "pos_x": 4,
         "test_flag": 0,
-        "icon_no": "10354",
+        "icon_no": "10350",
         "school": 3,
         "pos_y": 2,
         "group": 2,
         "pre_point_requir": 5,
         "pre_main_point_requir": 22,
-        "tname": "草蛇灰线",
-        "tips": "技能状态命中力提升自身等级数值的1.6倍，你释放的陷阱对目标产生影响时，忽略对方14%的法术防御。"
+        "tname": "风声鹤唳",
+        "tips": "每30秒获得一次持续20秒的风声鹤唳状态，该状态下只能受到最大生命值33%的伤害，其他伤害将被全部抵消，当有超过生命值1%的伤害被抵消时，解除此状态。"
     },
     "103205,3": {
         "pos_x": 4,
         "test_flag": 0,
-        "icon_no": "10354",
+        "icon_no": "10350",
         "school": 3,
         "pos_y": 2,
         "group": 2,
         "pre_point_requir": 5,
         "pre_main_point_requir": 22,
-        "tname": "草蛇灰线",
-        "tips": "技能状态命中力提升自身等级数值的2.2倍，你释放的陷阱对目标产生影响时，忽略对方21%的法术防御。"
+        "tname": "风声鹤唳",
+        "tips": "每25秒获得一次持续20秒的风声鹤唳状态，该状态下只能受到最大生命值27%的伤害，其他伤害将被全部抵消，当有超过生命值1%的伤害被抵消时，解除此状态。"
     },
     "103206,1": {
         "pos_x": 2,
@@ -8383,38 +8383,38 @@ var Simulator_data = {
     "110104,1": {
         "pos_x": 2,
         "test_flag": 0,
-        "icon_no": "11004",
+        "icon_no": "11007",
         "school": 10,
         "pos_y": 2,
         "group": 1,
         "pre_point_requir": 5,
         "pre_main_point_requir": 22,
-        "tname": "狂龙之怒",
-        "tips": "怒龙之袭命中目标造成额外1秒的混乱。"
+        "tname": "破釜沉舟",
+        "tips": "背水殇歌额外损失0.5%生命值，提升10%技能威力。"
     },
     "110104,2": {
         "pos_x": 2,
         "test_flag": 0,
-        "icon_no": "11004",
+        "icon_no": "11007",
         "school": 10,
         "pos_y": 2,
         "group": 1,
         "pre_point_requir": 5,
         "pre_main_point_requir": 22,
-        "tname": "狂龙之怒",
-        "tips": "怒龙之袭命中目标造成额外1.5秒的混乱。"
+        "tname": "破釜沉舟",
+        "tips": "背水殇歌额外损失1%生命值，提升20%技能威力。"
     },
     "110104,3": {
         "pos_x": 2,
         "test_flag": 0,
-        "icon_no": "11004",
+        "icon_no": "11007",
         "school": 10,
         "pos_y": 2,
         "group": 1,
         "pre_point_requir": 5,
         "pre_main_point_requir": 22,
-        "tname": "狂龙之怒",
-        "tips": "怒龙之袭命中目标造成额外2秒的混乱。"
+        "tname": "破釜沉舟",
+        "tips": "背水殇歌额外损失1.5%生命值，提升30%技能威力，调息时间降低0.5秒。"
     },
     "110105,1": {
         "pos_x": 3,
@@ -8479,38 +8479,38 @@ var Simulator_data = {
     "110107,1": {
         "pos_x": 4,
         "test_flag": 0,
-        "icon_no": "11007",
+        "icon_no": "11004",
         "school": 10,
         "pos_y": 3,
         "group": 1,
         "pre_point_requir": 10,
         "pre_main_point_requir": 40,
-        "tname": "破釜沉舟",
-        "tips": "背水殇歌额外损失0.5%生命值，提升10%技能威力。"
+        "tname": "狂龙之怒",
+        "tips": "怒龙之袭命中目标造成额外1秒的混乱。"
     },
     "110107,2": {
         "pos_x": 4,
         "test_flag": 0,
-        "icon_no": "11007",
+        "icon_no": "11004",
         "school": 10,
         "pos_y": 3,
         "group": 1,
         "pre_point_requir": 10,
         "pre_main_point_requir": 40,
-        "tname": "破釜沉舟",
-        "tips": "背水殇歌额外损失1%生命值，提升20%技能威力。"
+        "tname": "狂龙之怒",
+        "tips": "怒龙之袭命中目标造成额外1.5秒的混乱。"
     },
     "110107,3": {
         "pos_x": 4,
         "test_flag": 0,
-        "icon_no": "11007",
+        "icon_no": "11004",
         "school": 10,
         "pos_y": 3,
         "group": 1,
         "pre_point_requir": 10,
         "pre_main_point_requir": 40,
-        "tname": "破釜沉舟",
-        "tips": "背水殇歌额外损失1.5%生命值，提升30%技能威力，调息时间降低0.5秒。"
+        "tname": "狂龙之怒",
+        "tips": "怒龙之袭命中目标造成额外2秒的混乱。"
     },
     "110108,1": {
         "pos_x": 2,
