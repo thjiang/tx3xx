@@ -1,7 +1,4 @@
 @charset "gb2312";
-/*
-	描述:
-*/
 /*reset*/
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,blockquote,th,td,p{margin:0;padding:0}
 input,button,select,textarea{outline:none}li{list-style:none}img{border:none}textarea{resize:none}
@@ -13,7 +10,7 @@ a:hover{color:#090}
 .clearfix2{*+height:1%}
 .clearfix{overflow:hidden;_zoom:1;}
 /* =e Reset */
-html,body{height:100%;}
+html,body{height:100%;font-family:"Microsoft YaHei",Arial,sans-serif;}
 body{line-height:170%;font-size:12px;color:#000;background:#FFF;}
 /* 链接 [link加颜色英文] */
 .red,a.red,.red a{color:#cf2025;}
@@ -22,7 +19,6 @@ body{line-height:170%;font-size:12px;color:#000;background:#FFF;}
 .fuchsia{color:#EC02EC;}
 .hide{display:none;}
 /* =e Font */
-
 
 /* =s layout */
 /* 顶部导航 */
@@ -33,39 +29,13 @@ body{line-height:170%;font-size:12px;color:#000;background:#FFF;}
 #wrap-bg1,#wrap-bg2,#wrap-bg3{width:100%;min-width:860px}
 /* 主体 */
 #main{position:relative;width:860px;margin:0 auto;}
-/* 页眉 */
-#header{height:307px;}
 /* 中心 */
 #center{height:693px;position:relative;padding-top:1px;}
-	
-/* 页脚 */
-#footer{text-align:center;clear:both;padding-top:10px;height:80px}
-#footer,#footer a{color:#000;text-decoration:none;}
-#footer a:hover{text-decoration:underline;}
-/* nie 底部版权(共3行）*/
-#NIE-copyRight{text-align:center;}
-#NIE-copyRight .l1{padding-bottom:10px;}
-#NIE-copyRight .l2{}
-#NIE-copyRight .l3{}
-/* 底部代码（隐藏） */
-#botCode{display:none;}
-/* =e layout */
 
-.maintx{ width:860px; height:263px;}
-.maintx a{width:860px; height:263px; display:block; float:left;}
-.mainNav{position:absolute;height:50px;top:257px;width:748px;left:0px; background:url(../images/mainnav.png) no-repeat;z-index:2;padding-left:60px;}
-.mainNav a{float:left;width:64px;height:50px;background:url(../images/mainNavHover.jpg);background-repeat:no-repeat;background-position:-9999px 0;text-indent:-9999px; margin-right:2px;margin-left:2px;}
-#mainNav-1:hover,.bx #mainNav-1{background-position:-470px 0}
-#mainNav-2:hover,.hh #mainNav-2{background-position:-62px 0}
-#mainNav-3:hover,.ly #mainNav-3{background-position:-198px 0}
-#mainNav-4:hover,.tx #mainNav-4{background-position:-334px 0}
-#mainNav-5:hover,.tj #mainNav-5{background-position:-130px 0}
-#mainNav-6:hover,.wl #mainNav-6{background-position:-266px 0}
-#mainNav-7:hover,.yj #mainNav-7{background-position:-538px 0}
-#mainNav-8:hover,.yl #mainNav-8{background-position:-402px 0}
-#mainNav-9:hover,.gm #mainNav-9{background-position:-606px 0}
-#mainNav-10:hover,.lw #mainNav-10{background-position:-674px 0}
-#mainNav-11:hover,.yh #mainNav-11{background-position:-742px 0}
+.maintx{width: 860px;height: 120px;margin-left: 110px;margin-top: 40px;}
+.maintx h3{font-size: 30px;font-weight: 100;}
+.mainNav{position:absolute;height:50px;top:120px;width:748px;left:0px; z-index:2;padding-left:110px;}
+.mainNav a{float:left;width:62px;font-size:24px;height:50px;font-weight: 100;}
 
 .setting{height:50px;margin-top: 25px;padding: 6px;font-size:14px;color:#333333; width:730px; margin-left:100px;}
 .setting span{float:left;height:50px;line-height:50px;margin:0 10px;display:inline}
@@ -146,11 +116,11 @@ body{line-height:170%;font-size:12px;color:#000;background:#FFF;}
 .tips-learn{color:#00FF00}
 .tips-cancle{color:#FF0000}
 
-.bx #wrap-bg1,.hh #wrap-bg1,.ly #wrap-bg1,.tx #wrap-bg1,.tj #wrap-bg1,.wl #wrap-bg1,.yj #wrap-bg1,.yl #wrap-bg1,.gm #wrap-bg1,.lw #wrap-bg1,.yh #wrap-bg1{background:url(../images/header.jpg) center 0 no-repeat;}
+/* .bx #wrap-bg1,.hh #wrap-bg1,.ly #wrap-bg1,.tx #wrap-bg1,.tj #wrap-bg1,.wl #wrap-bg1,.yj #wrap-bg1,.yl #wrap-bg1,.gm #wrap-bg1,.lw #wrap-bg1,.yh #wrap-bg1{background:url(../images/header.jpg) center 0 no-repeat;} */
 .bx .mainSubControl,.hh .mainSubControl,.ly .mainSubControl,.tx .mainSubControl,.tj .mainSubControl,.wl .mainSubControl,.yj .mainSubControl,.yl .mainSubControl,.gm .mainSubControl,.lw .mainSubControl,.yh .mainSubControl{background:url(../images/mainsub.png) no-repeat;top:122px;cursor:pointer}
 .bx .mainSubControl .maskButton,.hh .mainSubControl .maskButton,.ly .mainSubControl .maskButton,.tx .mainSubControl .maskButton,.tj .mainSubControl .maskButton,.wl .mainSubControl .maskButton,.yj .mainSubControl .maskButton,.yl .mainSubControl .maskButton,.gm .mainSubControl .maskButton,.lw .mainSubControl .maskButton,.yh .mainSubControl .maskButton{background:url(../images/mainsub.png) no-repeat -43px 0;}
 
-.bx #wrap-bg2{background:url(../images/body_bx.jpg) center 307px no-repeat;}
+/* .bx #wrap-bg2{background:url(../images/body_bx.jpg) center 307px no-repeat;}
 .hh #wrap-bg2{background:url(../images/body_hh.jpg) center 307px no-repeat;}
 .ly #wrap-bg2{background:url(../images/body_ly.jpg) center 307px no-repeat;}
 .tx #wrap-bg2{background:url(../images/body_tx.jpg) center 307px no-repeat;}
@@ -160,4 +130,4 @@ body{line-height:170%;font-size:12px;color:#000;background:#FFF;}
 .yl #wrap-bg2{background:url(../images/body_yl.jpg) center 307px no-repeat;}
 .gm #wrap-bg2{background:url(../images/body_gm.jpg) center 307px no-repeat;}
 .lw #wrap-bg2{background:url(../images/body_lw.jpg) center 307px no-repeat;}
-.yh #wrap-bg2{background:url(../images/body_yh.jpg) center 307px no-repeat;}
+.yh #wrap-bg2{background:url(../images/body_yh.jpg) center 307px no-repeat;} */

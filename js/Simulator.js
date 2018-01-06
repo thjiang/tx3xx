@@ -579,13 +579,13 @@ Simulator.showAlter = function (type, msg) {
     switch (type) {
         case "point":
             Simulator.alterTips.css({
-                top: 375,
+                top: 195,
                 left: 165
             });
             break;
         case "level":
             Simulator.alterTips.css({
-                top: 375,
+                top: 195,
                 left: 165
             });
             break;
