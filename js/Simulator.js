@@ -20,8 +20,10 @@ Simulator.groupPoint = {
 Simulator.tips = null; //技能提示层
 Simulator.alterTips = null; //提示层
 Simulator.iconURL = {
-    "enable": "images/skill/",
-    "disable": "images/skillblack/"
+    "enable": "https://scdn.icewish.top/project/xxmnq/skill/",
+    "disable": "https://scdn.icewish.top/project/xxmnq/skillblack/"
+    // "enable": "images/skill/",
+    // "disable": "images/skillblack/"
 };
 Simulator.getMainGroupPoint = function () {
     return Simulator.groupPoint["group" + Simulator.mainGroupID];
